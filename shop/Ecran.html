@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecran PC</title>
+    <link rel="stylesheet" href="Style3.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script async src='/cdn-cgi/bm/cv/669835187/api.js'></script>
+<script async src='/cdn-cgi/bm/cv/669835187/api.js'></script><script async src='/cdn-cgi/bm/cv/669835187/api.js'></script></head>
+
+<body style="background-color: black;" onload="loadCart()">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <div class="Navbar">
+        <!-- Header Main -->
+        <div class="header_main">
+            <div class="container">
+                <div class="row">
+                    <!-- Logo -->
+                    <div class="col-lg-2 col-sm-3 col-3 order-1">
+                        <div class="logo_container">
+                            <div class="logo"><a href="#">RenQ</a></div>
+                        </div>
+                    </div>
+                    <!-- Search -->
+                    <div class="col-lg-6 col-12 order-lg-2 order-3 text-lg-left text-right">
+                        <div class="header_search">
+                            <div class="header_search_content">
+                                <div class="header_search_form_container">
+                                    <form action="#" class="header_search_form clearfix"> <input type="search" required="required" class="header_search_input" placeholder="Search for products...">
+                                        <div class="custom_dropdown" style="display: none;">
+                                            <div class="custom_dropdown_list"> <span class="custom_dropdown_placeholder clc">All Categories</span> <i class="fas fa-chevron-down"></i>
+                                                <ul class="custom_list clc">
+                                                    <li><a class="clc" href="#">All Categories</a></li>
+                                                    <li><a class="clc" href="#">Computers</a></li>
+                                                    <li><a class="clc" href="#">Laptops</a></li>
+                                                    <li><a class="clc" href="#">Cameras</a></li>
+                                                    <li><a class="clc" href="#">Hardware</a></li>
+                                                    <li><a class="clc" href="#">Smartphones</a></li>
+                                                </ul>
+                                            </div>
+                                        </div> <button type="submit" class="header_search_button trans_300" value="Submit"><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1560918770/search.png" alt=""></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Wishlist -->
+                    <div class="col-lg-4 col-9 order-lg-3 order-2 text-lg-left text-right">
+                        <div class="wishlist_cart d-flex flex-row align-items-center justify-content-end">
+                            <div class="wishlist d-flex flex-row align-items-center justify-content-end">
+                                <div class="wishlist_icon"></div>
+                                <div class="wishlist_content">
+                                    <div class="wishlist_text"></div>
+                                    <div class="wishlist_count"></div>
+                                </div>
+                            </div>
+                            <!-- Cart -->
+                            <div class="cart">
+                                <div class="cart_container d-flex flex-row align-items-center justify-content-end">
+                                    <div class="cart_icon"> <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1560918704/cart.png" alt="">
+                                        <div class="cart_count"><span class="cart-count">0</span></div>
+                                    </div>
+                                    <div class="cart_content">
+                                        <div class="cart_text"><a href="#">Cart</a></div>
+                                        <span class="dollar">TND</span><span class="cart_price">0</span>
+                                        <button id="reset" onclick='resetCart()'> <i class='bx bx-x'></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Main Navigation -->
+        <nav class="main_nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="main_nav_content d-flex flex-row">
+                            <!-- Categories Menu -->
+                            <!-- Main Nav Menu -->
+                            <div class="main_nav_menu">
+                                <ul class="standard_dropdown main_nav_dropdown">
+                                    <li><a href="Home.html">Home<i class="fas fa-chevron-down"></i></a></li>
+                                    <li class="hassubs"> <a href="Store.html">PC Gaming</a>
+                                        <li class="hassubs"> <a href="Ecran.html">Monitors</a>
+                                            <li class="hassubs"> <a href="#">Accessories PC<i class="fas fa-chevron-down"></i></a>
+                                                <ul>
+                                                    <li><a href="Mouse.html">Mouse<i class="fas fa-chevron-down"></i></a></li>
+                                                    <li><a href="Keyboard.html">Keybord<i class="fas fa-chevron-down"></i></a></li>
+                                                </ul>
+                                            </li>
+                                </ul>
+                            </div>
+                            <!-- Menu Trigger -->
+                            <div class="menu_trigger_container ml-auto">
+                                <div class="menu_trigger d-flex flex-row align-items-center justify-content-end">
+                                    <div class="menu_burger">
+                                        <div class="menu_trigger_text">menu</div>
+                                        <div class="cat_burger menu_burger_inner"><span></span><span></span><span></span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Menu -->
+        <div class="page_menu">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="page_menu_content">
+                            <div class="page_menu_search">
+                                <form action="#"> <input type="search" required="required" class="page_menu_search_input" placeholder="Search for products..."> </form>
+                            </div>
+                            <ul class="page_menu_nav">
+                                <li class="page_menu_item has-children"> <a href="#">Language<i class="fa fa-angle-down"></i></a>
+                                    <ul class="page_menu_selection">
+                                        <li><a href="#">English<i class="fa fa-angle-down"></i></a></li>
+                                        <li><a href="#">Italian<i class="fa fa-angle-down"></i></a></li>
+                                        <li><a href="#">Spanish<i class="fa fa-angle-down"></i></a></li>
+                                        <li><a href="#">Japanese<i class="fa fa-angle-down"></i></a></li>
+                                    </ul>
+                                </li>
+                                <li class="page_menu_item has-children"> <a href="#">Currency<i class="fa fa-angle-down"></i></a>
+                                    <ul class="page_menu_selection">
+                                        <li><a href="#">US Dollar<i class="fa fa-angle-down"></i></a></li>
+                                        <li><a href="#">EUR Euro<i class="fa fa-angle-down"></i></a></li>
+                                        <li><a href="#">GBP British Pound<i class="fa fa-angle-down"></i></a></li>
+                                        <li><a href="#">JPY Japanese Yen<i class="fa fa-angle-down"></i></a></li>
+                                    </ul>
+                                </li>
+                                <li class="page_menu_item"> <a href="#">Home<i class="fa fa-angle-down"></i></a> </li>
+                                <li class="page_menu_item has-children"> <a href="#">Super Deals<i class="fa fa-angle-down"></i></a>
+                                    <ul class="page_menu_selection">
+                                        <li><a href="#">Super Deals<i class="fa fa-angle-down"></i></a></li>
+                                        <li class="page_menu_item has-children"> <a href="#">Menu Item<i class="fa fa-angle-down"></i></a>
+                                            <ul class="page_menu_selection">
+                                                <li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
+                                                <li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
+                                                <li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
+                                                <li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
+                                        <li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
+                                        <li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
+                                    </ul>
+                                </li>
+                                <li class="page_menu_item has-children"> <a href="#">Featured Brands<i class="fa fa-angle-down"></i></a>
+                                    <ul class="page_menu_selection">
+                                        <li><a href="#">Featured Brands<i class="fa fa-angle-down"></i></a></li>
+                                        <li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
+                                        <li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
+                                        <li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
+                                    </ul>
+                                </li>
+                                <li class="page_menu_item has-children"> <a href="#">Trending Styles<i class="fa fa-angle-down"></i></a>
+                                    <ul class="page_menu_selection">
+                                        <li><a href="#">Trending Styles<i class="fa fa-angle-down"></i></a></li>
+                                        <li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
+                                        <li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
+                                        <li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="menu_contact">
+                                <div class="menu_contact_item">
+                                    <div class="menu_contact_icon"><img src="images/phone_white.png" alt=""></div>+38 068 005 3570
+                                </div>
+                                <div class="menu_contact_item">
+                                    <div class="menu_contact_icon"><img src="images/mail_white.png" alt=""></div><a href="mailto:fastsales@gmail.com">fastsales@gmail.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </header>
+    </div>
+    <section class="section-spacing bottom-none inverse-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title text-center">
+                        <h2 id="h2-1"><span>GAMING MONITORS</span></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <ul id="filter-list">
+                        <li class="filter active" id="a" data-filter="all" onclick="allp(this)">ALL</li>
+                        <li class="filter" id="b" data-filter="1" onclick="newp(this)">New Products</li>
+                        <li class="filter" id="c" data-filter="2" onclick="promotionp(this)">Promotion</li>
+                        <li class="filter" id="d" data-filter="3" onclick="instock(this)">In Stock</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+<!--section 1-->
+<section class="cards">
+    <div class="cardss" id="c1">
+        <div class="card-headphone">
+            <img src="https://cdn.kapwing.com/nLR1KnLP-HFcAuk9Gp.png?GoogleAccessId=kapwing-pubsub%40kapwing-181323.iam.gserviceaccount.com&Expires=1644407259&Signature=d2VEAP4dS3WetVUB0dEEaQLgcGv%2F2MrCQv1G6aAf1APvcRojaTnOKzD5VmH8OGT4yPI%2F8e3RYtx1IApQT7VQ2LvSDk7mbyBp%2Bh7J2ZNT73f7nQrK8sZSNDeq0YbLi%2F%2Benk%2FV0dCpI2rnj5p7QtfgTh8%2FgRPnV7MrCwKcKiZ95rgnlkQHbpVdAeyTs8EPT6PDpt7F9VzYHI%2Fcrmo6SehmNI1jKd44Mi0RPyJuxogY4J4vtPY2EsM553BRpckLIkyhauGy9%2FtD6SwILva%2Frn6VoEOk8Qx%2B0OhGoDvbD39mF%2BE3q2kG3bF4gH8KNStDJaQP6PGG64uAEHNV5PWtE9h%2FVg%3D%3D" alt="headphone">
+        </div>
+        <div class="card-infos">
+            <h3 class="card-title">Redragon 144HZ</h3>
+            <h2 class="price">TND500</h2>
+            <a href="#" class="buy" onclick="addToCart(500)">Buy Now</a>
+        </div>
+    </div>
+    <div class="cardss" id="c2">
+        <div class="card-headphone">
+            <img src="https://cdn.kapwing.com/wHosihPc-Crflb7q1Vz.png?GoogleAccessId=kapwing-pubsub%40kapwing-181323.iam.gserviceaccount.com&Expires=1644409369&Signature=S5UInFbqpo9q7e8TxR0RLm1SYwBliigp9PFi%2FQTgNYQcK9omFXr5tn%2F%2BFY8Uq8Nc6%2FmWA%2BO6ZxgS5kNRRex6FEJ6V1eUYD0rCLLoQh%2Fkv9Hwt2R4RF1NQeZu7RNwxDxSBK%2F4SHA2NibYsOYrFPcxj55gak7WKsdLOG1XgxM2QvnIF%2BbD5fBXOH09GD5JDIfKEpJBeZfG5XUgBlQGlITGFgyqP%2BjJAM0RlIHPcJNRyvpq24BQZsmZ0YPxqSqoBfeQ4YdKpgPg84t4kmeW18OzdzLvPhsjAnEvuygk9cnAO5iu%2B6if7fGPLk4Hp%2FgovlhRKUXuLquCOItRMDREdPDdMA%3D%3D" alt="headphone">
+        </div>
+        <div class="card-infos">
+            <h3 class="card-title">Samsung 144HZ</h3>
+            <h2 class="price">TND700</h2>
+            <a href="#" class="buy" onclick="addToCart(700)">Buy Now</a>
+        </div>
+    </div>
+    <div class="cardss" id="c3">
+        <div class="card-headphone">
+            <img src="https://cdn.kapwing.com/jZB14xSB-ITcsl-SyFP.png?GoogleAccessId=kapwing-pubsub%40kapwing-181323.iam.gserviceaccount.com&Expires=1644407568&Signature=MbmqA9e0P%2BAIiIRC8KiyQBVQ%2BpUm2pqLTUBffelPntoNUzbxAQVsHfIHyF0cBhswgCpsa1f8vf1gXzqIf7RoZIvr2bEhXsi3OmCJhZ00cVR8Z6eChmSjmkhUEijXGx2xoN8SbQyzAFIMoOhwU6agUDE9uJPXFbRG1nw8ceONlEwsYoA5hqhLY%2FDG3igdGOw9kj34zAiCAsvwQc8VTHKWVT5R9Esy%2FD6JbNR15YLPEJRrtrFNP4E8RETDNfLXccBdYDKPqX5EDBF5fTL7vOoB54MXUybRAFs19DczQjo5D2rkwvSmZlhdEWA8fgCYA87V82SKMCr5hr9qBr5mrVdcmw%3D%3D" alt="headphone">
+        </div>
+        <div class="card-infos">
+            <h3 class="card-title">GIGABYTE</h3>
+            <h2 class="price">TND850</h2>
+            <a href="#" class="buy" onclick="addToCart(850)">Buy Now</a>
+        </div>
+    </div>
+    </section>
+    <!--section 2-->
+    <section class="cards-2">
+    <div class="cardsss" id="c4">
+        <div class="card-headphone">
+            <img src="https://cdn.kapwing.com/Tw2JOeaU-tUoLX8eWVy.png?GoogleAccessId=kapwing-pubsub%40kapwing-181323.iam.gserviceaccount.com&Expires=1644410799&Signature=K1imYBWDuWB5oYflrSewk5f3qSFeVEUol5Fx%2BmiewFG%2B07lYitQv0Tgt5h2keok5DeDjH5D8UaTAh75TPjeUE3fnpSn3WccreqaXgLsMxiCr5KDKl21jDdPNfEnbS0c7Qfb9nDlZEfn4mqjKHNlB5SCcl8%2BYVKWs4KNGXswoWfj1noky6NcTPXI%2BAoa8fusWa5A%2FZhD6rEEjxP2EHMlAGRlMul5wvHY5A58FdA%2Bp4TQTSBJpysIOaEaig09HmmnOuXfTbGL2BON7QcEg%2FFWBUVoVP7zUbZHYGjPOYz4bWulxUMC6Ar%2F3P7SURmAQ3FtlH8KN60h%2BkKjdpsrTSGHNNQ%3D%3D" alt="headphone">
+        </div>
+        <div class="card-infos">
+            <h3 class="card-title">BENQ 60HZ</h3>
+            <h2 class="price">TND450</h2>
+            <a href="#" class="buy" onclick="addToCart(450)">Buy Now</a>
+        </div>
+    </div>
+    <div class="cardsss" id="c5">
+        <div class="card-headphone">
+            <img src="https://cdn.kapwing.com/w88T7LBN-i1U9Tn3Pij.png?GoogleAccessId=kapwing-pubsub%40kapwing-181323.iam.gserviceaccount.com&Expires=1644427577&Signature=UNED9Yfo8sO3c6UsuYYN5IbqpgA6mQjwuVV%2B8Gh08bo5uKYrKsbb8YmFrm0%2BKsCudg%2BLuQjcmN4uvcpepB3vS%2Fsl%2B5ZJk%2BCCqry7VPEAVkpu158btYsgFDqRqfzhJEzzfYR%2BmPpPa35bOLkp3bKBZ5A%2FfQdOWt9vLpdGrhw1eHyMnzi251ZN46bSDD0yZoAY5g6o6vPeE6byjakgSE04KrE4gQNGxVbDrvw9FPr0VwhXlPKufL0LEp%2FAwSa1uEdfxoyVRBSLGu2PPQfQMG%2BEnRBu%2BfmlF6PsAaB%2FfBI5ZDJpEubknJbdibCrLBYB9dD0ZcLzmlLQ5uemM%2FBg3auAqw%3D%3D" alt="headphone">
+        </div>
+        <div class="card-infos">
+            <h3 class="card-title">Antgamer 144hz</h3>
+            <h2 class="price">TND950</h2>
+            <a href="#" class="buy" onclick="addToCart(950)">Buy Now</a>
+        </div>
+    </div>
+    <div class="cardsss" id="c6">
+        <div class="card-headphone">
+            <img src="https://cdn.webshopapp.com/shops/250788/files/306382008/antgamer-antgamer-m34g5q.jpg" alt="headphone">
+        </div>
+        <div class="card-infos">
+            <h3 class="card-title">antgamer 165hz</h3>
+            <h2 class="price">TND1150</h2>
+            <a href="#" class="buy" onclick="addToCart(1150)">Buy Now</a>
+        </div>
+    </div>
+    </section>
+    <!--section 3-->
+    <section class="cards-3">
+        <div class="cardssss" id="c7">
+            <div class="card-headphone">
+                <img src="https://cdn.kapwing.com/aP82SF1k-533QwWdlOD.png?GoogleAccessId=kapwing-pubsub%40kapwing-181323.iam.gserviceaccount.com&Expires=1644431106&Signature=UjAid6MUPSSsSGt31ju9lE6koxqZBHZ8t37%2B5JURLXyMcpi9i8Hb0x0s1MzGMFstlGI4kP1qoI6dArHSZTSWKnNNUdDwoZV7izzpnhSQrJ%2B82kVFD54t4q8fSIKwRdtcMuGfkRMT6DB7y0RExLbZCyexWMEvY%2FInIL%2FDiKO7U3qVCM01OivyMXMn4KnMmGNCZvQWw57o%2FkQCkvtjWOPg9YKluLYfckG%2FSD0sdiya%2B96oTExY051qEABd%2FoduqW%2BqbJ%2B3BGXRG7ouCCi5OTPwYSnPnwWJNr%2BYQzjQlU0jFMsWGb9D6myLxpMLhKKncbsyO7IOPslytD1Gg6yf7hr2Vg%3D%3D" alt="headphone">
+            </div>
+            <div class="card-infos">
+                <h3 class="card-title">MSI Optix 144HZ</h3>
+                <h2 class="price">TND800</h2>
+                <a href="#" class="buy" onclick="addToCart(800)">Buy Now</a>
+            </div>
+        </div>
+        <div class="cardssss" id="c8">
+            <div class="card-headphone">
+                <img src="https://cdn.kapwing.com/rvxttJic-WNeZykJLt.png?GoogleAccessId=kapwing-pubsub%40kapwing-181323.iam.gserviceaccount.com&Expires=1644431605&Signature=JIU9g2mwjNu%2F4oDcKvN1LEkufjiE%2Fy2xbBzmwV8wKNm%2BMM5E8Hl%2B7CBgZmwkxRa3gM1o34mxkeEgLDTb%2BJjrUleU4CSLioBiPRcopQnupV10hfcTRYnOtC2hCE9YAiOmKk13xXhIVMKEJ5HY8NeZs%2F9NtQvu86Xl8krI%2FDtHjMLdltM1kEaQ%2B5Z00CwwHKX%2BpAmzpu8OZv6rHMTMUcsoc4R3E05CC7rTLqdAoHVCxbSiAzb1TPQsIpQXebviGTO2NhhJDyGdgKqzLhdeJX6PUAy4%2FLu5lveKde25hcAtXAfYtKEZRQr%2FHD75TyvoY%2FXXfAQ%2FLtxN982RUSv2Z%2Fn5QQ%3D%3D" alt="headphone">
+            </div>
+            <div class="card-infos">
+                <h3 class="card-title">AOC G2U</h3>
+                <h2 class="price">TND650</h2>
+                <a href="#" class="buy" onclick="addToCart(650)">Buy Now</a>
+            </div>
+        </div>
+        <div class="cardssss" id="c9">
+            <div class="card-headphone">
+                <img src="https://cdn.kapwing.com/Nbf5TTn8-OljLz5hWTW.png?GoogleAccessId=kapwing-pubsub%40kapwing-181323.iam.gserviceaccount.com&Expires=1644431728&Signature=iObBnd7%2F2qwHFbOXEFXvM%2FV%2FKct3WLYH8lDX%2B1of45TuyL1ebE3EnwECKe5YkGFPLlXqV54HPXdhdebC1kzW2c1OlTERCHXSsnmI4o3%2BSz%2BeEXd%2FUtLKDNvCt9ZIbUIHmCCSCWHdC5DROSJCFCe%2F8uTXieU6gtg8C1G0AiFIIQrElEL%2FlEAoM3nSTo2FR7s1y%2BhDndiBaOOrHLGWAA%2BGwgJVzYBOYdIQRFcL1a3LmxeEnRgnfgD0rUw47zdMy7w5CR1SJIx52WTedF11teQJVKK0QRAcXQ5g10SVdsqmy6YU%2B1JDetGXxwA75ONRLtETW1z%2BS7kHo3cHxIg4C%2Bo0LQ%3D%3D" alt="headphone">
+            </div>
+            <div class="card-infos">
+                <h3 class="card-title">viewsonic 165hz</h3>
+                <h2 class="price">TND1500</h2>
+                <a href="#" class="buy" onclick="addToCart(1500)">Buy Now</a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <h3>RenQ'S SHOP</h3>
+            <p>
+    Gaming specialists in Tunisia! Our range of Gamer PCs assembled and tested in Tunisia for optimal performance in your favorite video games with prices adapted to all budgets.</p>
+            <ul class="socials">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy;2021 RenQ'S SHOP.</p>
+        </div>
+    </footer>
+    <script src="js2..js"></script>
+    <script src="main.js"></script>
+<script type="text/javascript">(function(){window['__CF$cv$params']={r:'6d8460697dbe3295',m:'ezPe31EpybJMyc_ZwzZu_sYVD.XUcviJ1Q2PcNt9g7o-1643982716-0-AerWHCObV6WVPQd0DtO1QvoWg83yK7CHuObkNJBdTlYk+pZ7x5uW9vnL3MtVTSum0miODPGkAlDDMxpeRwtUESuBOpSGpDBcj808p1xjIapZCHzkAafqDX8TGO5sgo8JjHAJphY5ufIBok2q54pYGtCTk5oYk2yYmaB3TRdMqERAi9BzqWdVjcxToAXKJtyNOw==',s:[0xa15d7b995c,0xaac12ca72a],}})();</script><script type="text/javascript">(function(){window['__CF$cv$params']={r:'6d8694dadb580fd6',m:'L7Z1j.l6DY_.X5zuMD.bsj354D28rJSjuSE0RjTOYac-1644005836-0-AQ5FreA5JB+P7XLOe7q6gYjH34zxu1A9H7j8jR/OPrHKEz4OPT8PRyzFW7Al7cqQJ6BCtmZAo+Kat5NKlStz0YXlhTgu1yfzWqgSgKV+Zr2pRNNgwKCP4rl7btvoIvDVaY6avzz8YezCN3BgfrwhGmGvURWP3lR/D5hTHwDF4SvuB8lZ7vcpi0sp3x6063jlxQ==',s:[0x2fe8a6a9f2,0x6bed7ed76c],}})();</script>
+</body>

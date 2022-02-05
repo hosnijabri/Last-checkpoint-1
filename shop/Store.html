@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script async src='/cdn-cgi/bm/cv/669835187/api.js'></script>
+<script async src='/cdn-cgi/bm/cv/669835187/api.js'></script><script async src='/cdn-cgi/bm/cv/669835187/api.js'></script></head>
+
+<body style="background-color: black;" onload="loadCart()">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <div class="Navbar">
+        <!-- Header Main -->
+        <div class="header_main">
+            <div class="container">
+                <div class="row">
+                    <!-- Logo -->
+                    <div class="col-lg-2 col-sm-3 col-3 order-1">
+                        <div class="logo_container">
+                            <div class="logo"><a href="#">RenQ</a></div>
+                        </div>
+                    </div>
+                    <!-- Search -->
+                    <div class="col-lg-6 col-12 order-lg-2 order-3 text-lg-left text-right">
+                        <div class="header_search">
+                            <div class="header_search_content">
+                                <div class="header_search_form_container">
+                                    <form action="#" class="header_search_form clearfix"> <input type="search" required="required" class="header_search_input" placeholder="Search for products...">
+                                        <div class="custom_dropdown" style="display: none;">
+                                            <div class="custom_dropdown_list"> <span class="custom_dropdown_placeholder clc">All Categories</span> <i class="fas fa-chevron-down"></i>
+                                                <ul class="custom_list clc">
+                                                    <li><a class="clc" href="#">All Categories</a></li>
+                                                    <li><a class="clc" href="#">Computers</a></li>
+                                                    <li><a class="clc" href="#">Laptops</a></li>
+                                                    <li><a class="clc" href="#">Cameras</a></li>
+                                                    <li><a class="clc" href="#">Hardware</a></li>
+                                                    <li><a class="clc" href="#">Smartphones</a></li>
+                                                </ul>
+                                            </div>
+                                        </div> <button type="submit" class="header_search_button trans_300" value="Submit"><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1560918770/search.png" alt=""></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Wishlist -->
+                    <div class="col-lg-4 col-9 order-lg-3 order-2 text-lg-left text-right">
+                        <div class="wishlist_cart d-flex flex-row align-items-center justify-content-end">
+                            <div class="wishlist d-flex flex-row align-items-center justify-content-end">
+                                <div class="wishlist_icon"></div>
+                                <div class="wishlist_content">
+                                    <div class="wishlist_text"></div>
+                                    <div class="wishlist_count"></div>
+                                </div>
+                            </div>
+                            <!-- Cart -->
+                            <div class="cart">
+                                <div class="cart_container d-flex flex-row align-items-center justify-content-end">
+                                    <div class="cart_icon"> <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1560918704/cart.png" alt="">
+                                        <div class="cart_count"><span class="cart-count">0</span></div>
+                                    </div>
+                                    <div class="cart_content">
+                                        <div class="cart_text"><a href="#">Cart</a></div>
+                                        <span class="dollar">TND</span><span class="cart_price">0</span>
+                                        <button id="reset" onclick='resetCart()'> <i class='bx bx-x'></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Main Navigation -->
+        <nav class="main_nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="main_nav_content d-flex flex-row">
+                            <!-- Categories Menu -->
+                            <!-- Main Nav Menu -->
+                            <div class="main_nav_menu">
+                                <ul class="standard_dropdown main_nav_dropdown">
+                                    <li><a href="Home.html">Home<i class="fas fa-chevron-down"></i></a></li>
+                                    <li class="hassubs"> <a href="#">PC Gaming</a>
+                                        <li class="hassubs"> <a href="Ecran.html">Monitors</i></a>
+                                            <li class="hassubs"> <a href="#">Accessories PC<i class="fas fa-chevron-down"></i></a>
+                                                <ul>
+                                                    <li><a href="Mouse.html">Mouses<i class="fas fa-chevron-down"></i></a></li>
+                                                    <li><a href="Keyboard.html">Keybords<i class="fas fa-chevron-down"></i></a></li>
+                                                </ul>
+                                            </li>
+                                </ul>
+                            </div>
+                            <!-- Menu Trigger -->
+                            <div class="menu_trigger_container ml-auto">
+                                <div class="menu_trigger d-flex flex-row align-items-center justify-content-end">
+                                    <div class="menu_burger">
+                                        <div class="menu_trigger_text">menu</div>
+                                        <div class="cat_burger menu_burger_inner"><span></span><span></span><span></span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Menu -->
+        <div class="page_menu">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="page_menu_content">
+                            <div class="page_menu_search">
+                                <form action="#"> <input type="search" required="required" class="page_menu_search_input" placeholder="Search for products..."> </form>
+                            </div>
+                            <ul class="page_menu_nav">
+                                <li class="page_menu_item has-children"> <a href="#">Language<i class="fa fa-angle-down"></i></a>
+                                    <ul class="page_menu_selection">
+                                        <li><a href="#">English<i class="fa fa-angle-down"></i></a></li>
+                                        <li><a href="#">Italian<i class="fa fa-angle-down"></i></a></li>
+                                        <li><a href="#">Spanish<i class="fa fa-angle-down"></i></a></li>
+                                        <li><a href="#">Japanese<i class="fa fa-angle-down"></i></a></li>
+                                    </ul>
+                                </li>
+                                <li class="page_menu_item has-children"> <a href="#">Currency<i class="fa fa-angle-down"></i></a>
+                                    <ul class="page_menu_selection">
+                                        <li><a href="#">US Dollar<i class="fa fa-angle-down"></i></a></li>
+                                        <li><a href="#">EUR Euro<i class="fa fa-angle-down"></i></a></li>
+                                        <li><a href="#">GBP British Pound<i class="fa fa-angle-down"></i></a></li>
+                                        <li><a href="#">JPY Japanese Yen<i class="fa fa-angle-down"></i></a></li>
+                                    </ul>
+                                </li>
+                                <li class="page_menu_item"> <a href="#">Home<i class="fa fa-angle-down"></i></a> </li>
+                                <li class="page_menu_item has-children"> <a href="#">Super Deals<i class="fa fa-angle-down"></i></a>
+                                    <ul class="page_menu_selection">
+                                        <li><a href="#">Super Deals<i class="fa fa-angle-down"></i></a></li>
+                                        <li class="page_menu_item has-children"> <a href="#">Menu Item<i class="fa fa-angle-down"></i></a>
+                                            <ul class="page_menu_selection">
+                                                <li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
+                                                <li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
+                                                <li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
+                                                <li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
+                                        <li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
+                                        <li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
+                                    </ul>
+                                </li>
+                                <li class="page_menu_item has-children"> <a href="#">Featured Brands<i class="fa fa-angle-down"></i></a>
+                                    <ul class="page_menu_selection">
+                                        <li><a href="#">Featured Brands<i class="fa fa-angle-down"></i></a></li>
+                                        <li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
+                                        <li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
+                                        <li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
+                                    </ul>
+                                </li>
+                                <li class="page_menu_item has-children"> <a href="#">Trending Styles<i class="fa fa-angle-down"></i></a>
+                                    <ul class="page_menu_selection">
+                                        <li><a href="#">Trending Styles<i class="fa fa-angle-down"></i></a></li>
+                                        <li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
+                                        <li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
+                                        <li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
+                                    </ul>
+                                </li>
+                                <li class="page_menu_item"><a href="blog.html">blog<i class="fa fa-angle-down"></i></a></li>
+                                <li class="page_menu_item"><a href="contact.html">contact<i class="fa fa-angle-down"></i></a></li>
+                            </ul>
+                            <div class="menu_contact">
+                                <div class="menu_contact_item">
+                                    <div class="menu_contact_icon"><img src="images/phone_white.png" alt=""></div>+38 068 005 3570
+                                </div>
+                                <div class="menu_contact_item">
+                                    <div class="menu_contact_icon"><img src="images/mail_white.png" alt=""></div><a href="mailto:fastsales@gmail.com">fastsales@gmail.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </header>
+    </div>
+    <section class="section-spacing bottom-none inverse-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title text-center">
+                        <h2 id="h2-1"><span>GAMING PCS</span></h2>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <ul id="filter-list">
+                        <li class="filter active" id="a" data-filter="all" onclick="allp(this)">ALL</li>
+                        <li class="filter" id="b" data-filter="1" onclick="newp(this)">New Products</li>
+                        <li class="filter" id="c" data-filter="2" onclick="promotionp(this)">Promotion</li>
+                        <li class="filter" id="d" data-filter="3" onclick="instock(this)">In Stock</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--section 1-->
+<section class="cards">
+<div class="cardss" id="c1">
+    <div class="card-headphone">
+        <img src="https://static-freedomusainc1.netdna-ssl.com/blog/wp-content/uploads/2016/05/10445103_9.png" alt="headphone">
+    </div>
+    <div class="card-infos">
+        <h3 class="card-title">IN WIN PC</h3>
+        <h2 class="price">TND4500</h2>
+        <a href="#" class="buy" onclick="addToCart(4500)">Buy Now</a>
+    </div>
+</div>
+<div class="cardss" id="c2">
+    <div class="card-headphone">
+        <img src="https://ae01.alicdn.com/kf/H66a479ac82c7456baa064092b99bed3fb/IPASON-E1-mini-Gaming-PC-AMD-4-Core-3200GE-3-3GHz-D4-8G-120G-SSD-Desktop.png" alt="headphone">
+    </div>
+    <div class="card-infos">
+        <h3 class="card-title">AMD PC</h3>
+        <h2 class="price">TND3900</h2>
+        <a href="#" class="buy" onclick="addToCart(3900)">Buy Now</a>
+    </div>
+</div>
+<div class="cardss" id="c3">
+    <div class="card-headphone">
+        <img src="http://cdn.shopify.com/s/files/1/1831/5379/products/57_2182aaf7-44da-4b69-be24-ec8c9409d2ca_1200x1200.png?v=1604056217" alt="headphone">
+    </div>
+    <div class="card-infos">
+        <h3 class="card-title">GAMEMAX PC</h3>
+        <h2 class="price">TND2899</h2>
+        <a href="#" class="buy" onclick="addToCart(2899)">Buy Now</a>
+    </div>
+</div>
+</section>
+<!--section 2-->
+<section class="cards-2">
+<div class="cardsss" id="c4">
+    <div class="card-headphone">
+        <img src="https://vrlatech.com/wp-content/uploads/2019/08/Titan.png" alt="headphone">
+    </div>
+    <div class="card-infos">
+        <h3 class="card-title">POWER GAMING PC</h3>
+        <h2 class="price">TND2550</h2>
+        <a href="#" class="buy" onclick="addToCart(2550)">Buy Now</a>
+    </div>
+</div>
+<div class="cardsss" id="c5">
+    <div class="card-headphone">
+        <img src="https://i.pinimg.com/originals/81/53/ff/8153ff67f633145ce981cada5f7598d2.png" alt="headphone">
+    </div>
+    <div class="card-infos">
+        <h3 class="card-title">SHARKOON PC</h3>
+        <h2 class="price">TND2700</h2>
+        <a href="#" class="buy" onclick="addToCart(2700)">Buy Now</a>
+    </div>
+</div>
+<div class="cardsss" id="c6">
+    <div class="card-headphone">
+        <img src="https://vrlatech.com/wp-content/uploads/2019/08/Legacy-2.png" alt="headphone">
+    </div>
+    <div class="card-infos">
+        <h3 class="card-title">ZALMAN PC</h3>
+        <h2 class="price">TND5500</h2>
+        <a href="#" class="buy" onclick="addToCart(5500)">Buy Now</a>
+    </div>
+</div>
+</section>
+<!--section 3-->
+<section class="cards-3">
+    <div class="cardssss" id="c7">
+        <div class="card-headphone">
+            <img src="https://www.corsair.com/medias/sys_master/images/images/h4f/h64/8845114015774/-CC-9011094-WW-Gallery-Spec-Alpha-BLK-YLW-01.png" alt="headphone">
+        </div>
+        <div class="card-infos">
+            <h3 class="card-title">Corsair PC</h3>
+            <h2 class="price">TND1800</h2>
+            <a href="#" class="buy" onclick="addToCart(1800)">Buy Now</a>
+        </div>
+    </div>
+    <div class="cardssss" id="c8">
+        <div class="card-headphone">
+            <img src="https://cdn.kapwing.com/5uq0D5Tf-TLl6lIbEtC.png?GoogleAccessId=kapwing-pubsub%40kapwing-181323.iam.gserviceaccount.com&Expires=1644660659&Signature=cwdF21zK3lBM75e%2Fs3FKHjbrM5lMH41fSBylvL0sGhwFoyqaqwSO2FdRgbe%2FrO4EDt7pUU7JGE55xrE47AwsxIGrwFl0iBnuOH9UKXL4fF3GiV%2F9%2FLZ6wPyyr00vlCT5kfoX%2FUMwFTJErAbF8PVJm6bpY2N02h%2FV4KJWN%2BQGuVtuXs4daRi2uZVjmeZRnBrwqiDkDK6Gtz6mqQgTICiMArOd3idSrn%2FWCzg%2B9HBB0UjeDkgBe8Zo6aO9LitLnTAdiRvaKc4Vs6zZi09UoVn3eD3wxKaBv%2BA2v%2FEHvKLnKqbxZXFJvAnmeZOAb608gUhQURB0DJsywSAD2vfXe5UL6g%3D%3D" alt="headphone">
+        </div>
+        <div class="card-infos">
+            <h3 class="card-title">ATX PC</h3>
+            <h2 class="price">TND1660</h2>
+            <a href="#" class="buy" onclick="addToCart(1660)">Buy Now</a>
+        </div>
+    </div>
+    <div class="cardssss" id="c9">
+        <div class="card-headphone">
+            <img src="https://cdn.kapwing.com/nnond1dq-YonX4zqUV9.png?GoogleAccessId=kapwing-pubsub%40kapwing-181323.iam.gserviceaccount.com&Expires=1644440866&Signature=DnlGy42CSaLC9dyr192TXPuGiTand0WtAD9eeWKKIK%2F55n6cfn9fIdqz0k9N5C5Ah2oE26ELZKBO%2BIl%2Fqyr%2FI1mDCD8e5XwSgw9%2BFdPGLstxwUoLyW0BSCXREsKCJBgKJRGp30oVz%2BXlE1aNTuDbWHzi5ZiDPURUIyQxI6DHmLaWBy0AQduRuO9fODXzmp1%2B5hFgnxSI2%2FpihcpDuHCdp8eYmyc2GeBleUbHkPWlyGzy8TTw0y5tstHp0n4%2FTTl%2Bcj2ZYPaVLd13uLZQs7psx2XTeN7%2F8Rbyp7jY3d4QJwjr4Q%2FosLTbRC1jMjQOZou%2BkrolVs%2FV3o0n80nkaBHK2Q%3D%3D" alt="headphone">
+        </div>
+        <div class="card-infos">
+            <h3 class="card-title">MICRO-ATX PC</h3>
+            <h2 class="price">TND2500</h2>
+            <a href="#" class="buy" onclick="addToCart(2500)">Buy Now</a>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="footer-content">
+        <h3>RenQ'S SHOP</h3>
+        <p>
+Gaming specialists in Tunisia! Our range of Gamer PCs assembled and tested in Tunisia for optimal performance in your favorite video games with prices adapted to all budgets.</p>
+        <ul class="socials">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+        </ul>
+    </div>
+    <div class="footer-bottom">
+        <p>copyright &copy;2021 RenQ'S SHOP.</p>
+    </div>
+</footer>
+<script src="js2..js"></script>
+<script src="main.js"></script>
+<script type="text/javascript">(function(){window['__CF$cv$params']={r:'6d845fd6dca43295',m:'cZRlNnsZX7mSA8pg0vFThj5cHrtwDWRNcCob4l_tEns-1643982693-0-AeFnvByDZOS2lEAgqEZqK6XaUOSsCu6bfkO0FhuUGCnfZW/YTfE2yxIsVHG5465iyNGRbjvRKPoAOlAR71YyJluM/Bb+arimEn7tZVm3lAgbBC5MVGvw4EnNm4CxjuGp81qCosEaF2kVc1V5RYoVyalZIzREaetruVVNM5si1RcC+6TXDs2xwOXYoFPtez33Jw==',s:[0x3e7988720d,0x2c74c39bc0],}})();</script><script type="text/javascript">(function(){window['__CF$cv$params']={r:'6d86c88979087397',m:'x1NuuC_fBdU_U.tGWJLSNvDcx.pPczOYZKxkJULA1Og-1644007952-0-AehIPNmUHV1Ju1qaOhOfSdkQnQjTlGVImzb5xX6NS098cMqItfUd9ezasS+CKCzay3YCWS8RlvLrs/vMVKXAn27GaGqM9qNuSv2gppVEZY+Iz04ac9XkFZsEubvveZ69PysWjedseHNd71XpRrSaHx6TE0jCx15GUL+iINCzAh6fCAH4XA9hP2eVUPhlS89m0Q==',s:[0x2af7473cfc,0x6a54398e7a],}})();</script>
+</body>
+</html>
